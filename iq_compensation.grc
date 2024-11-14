@@ -1,0 +1,1052 @@
+options:
+  parameters:
+    author: Nicolas G. Cotti
+    catch_exceptions: 'True'
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: GNU GPL v3.0
+    description: Demonstration of the IQ imbalance compensation algorithm
+    gen_cmake: 'Off'
+    gen_linking: dynamic
+    generate_options: hb
+    hier_block_src_path: '.:'
+    id: IQ_Compensation
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: IQ Compensation
+    window_size: (1000,1000)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [8, 8]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: blocks_abs_xx_0
+  id: blocks_abs_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [240, 1664.0]
+    rotation: 0
+    state: true
+- name: blocks_abs_xx_0_0
+  id: blocks_abs_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 1504.0]
+    rotation: 0
+    state: true
+- name: blocks_abs_xx_0_1
+  id: blocks_abs_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [240, 1776.0]
+    rotation: 0
+    state: true
+- name: blocks_add_xx_2
+  id: blocks_add_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [560, 544.0]
+    rotation: 0
+    state: true
+- name: blocks_complex_to_imag_0
+  id: blocks_complex_to_imag
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [264, 1104.0]
+    rotation: 0
+    state: true
+- name: blocks_complex_to_real_0
+  id: blocks_complex_to_real
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [272, 952.0]
+    rotation: 0
+    state: true
+- name: blocks_divide_xx_0
+  id: blocks_divide_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [336, 1472.0]
+    rotation: 0
+    state: true
+- name: blocks_divide_xx_1
+  id: blocks_divide_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [304, 2080.0]
+    rotation: 0
+    state: true
+- name: blocks_divide_xx_2
+  id: blocks_divide_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [872, 2352.0]
+    rotation: 0
+    state: true
+- name: blocks_divide_xx_3
+  id: blocks_divide_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [288, 2600.0]
+    rotation: 0
+    state: disabled
+- name: blocks_divide_xx_3_0
+  id: blocks_divide_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [280, 2816.0]
+    rotation: 0
+    state: disabled
+- name: blocks_divide_xx_4
+  id: blocks_divide_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [704, 624.0]
+    rotation: 0
+    state: true
+- name: blocks_float_to_complex_0
+  id: blocks_float_to_complex
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [880, 336.0]
+    rotation: 0
+    state: true
+- name: blocks_moving_average_xx_0_1
+  id: blocks_moving_average_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    length: symbol_qtty
+    max_iter: symbol_qtty
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: 1/symbol_qtty
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [496, 1004.0]
+    rotation: 0
+    state: true
+- name: blocks_moving_average_xx_0_1_0
+  id: blocks_moving_average_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    length: symbol_qtty
+    max_iter: symbol_qtty
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: 1/symbol_qtty
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [640, 1636.0]
+    rotation: 0
+    state: true
+- name: blocks_moving_average_xx_0_1_0_0
+  id: blocks_moving_average_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    length: symbol_qtty
+    max_iter: symbol_qtty
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: 1/symbol_qtty
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [640, 1524.0]
+    rotation: 0
+    state: true
+- name: blocks_moving_average_xx_0_1_0_1
+  id: blocks_moving_average_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    length: symbol_qtty
+    max_iter: symbol_qtty
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: 1/symbol_qtty
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [640, 1748.0]
+    rotation: 0
+    state: true
+- name: blocks_moving_average_xx_0_1_1
+  id: blocks_moving_average_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    length: symbol_qtty
+    max_iter: symbol_qtty
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: 1/symbol_qtty
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [496, 1164.0]
+    rotation: 0
+    state: true
+- name: blocks_multiply_const_vxx_0
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: '-1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [888, 1548.0]
+    rotation: 0
+    state: true
+- name: blocks_multiply_xx_0
+  id: blocks_multiply_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [488, 1536.0]
+    rotation: 0
+    state: true
+- name: blocks_multiply_xx_1
+  id: blocks_multiply_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [264, 2248.0]
+    rotation: 0
+    state: true
+- name: blocks_multiply_xx_1_0
+  id: blocks_multiply_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [264, 2360.0]
+    rotation: 0
+    state: true
+- name: blocks_multiply_xx_3
+  id: blocks_multiply_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [384, 424.0]
+    rotation: 0
+    state: true
+- name: blocks_sub_xx_0
+  id: blocks_sub_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [784, 952.0]
+    rotation: 0
+    state: true
+- name: blocks_sub_xx_0_0
+  id: blocks_sub_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [776, 1104.0]
+    rotation: 0
+    state: true
+- name: blocks_sub_xx_1
+  id: blocks_sub_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [448, 2304.0]
+    rotation: 0
+    state: true
+- name: blocks_transcendental_0
+  id: blocks_transcendental
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: sqrt
+    type: float
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [632, 2316.0]
+    rotation: 0
+    state: true
+- name: blocks_transcendental_0_0
+  id: blocks_transcendental
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: asin
+    type: float
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [432, 2828.0]
+    rotation: 0
+    state: disabled
+- name: note_0
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: Theta parameters
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 1372.0]
+    rotation: 0
+    state: true
+- name: note_0_0
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: C coefficients
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [64, 1956.0]
+    rotation: 0
+    state: true
+- name: note_0_1_0
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: Remove DC offset
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [64, 852.0]
+    rotation: 0
+    state: true
+- name: note_0_1_1_0
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: Receive and balance
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [48, 228.0]
+    rotation: 0
+    state: true
+- name: pad_sink_0
+  id: pad_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: out
+    num_streams: '1'
+    optional: 'False'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1128, 348.0]
+    rotation: 0
+    state: true
+- name: pad_sink_1
+  id: pad_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: g_rx
+    num_streams: '1'
+    optional: 'True'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [712, 2612.0]
+    rotation: 0
+    state: disabled
+- name: pad_sink_2
+  id: pad_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: phi_rx
+    num_streams: '1'
+    optional: 'True'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [704, 2828.0]
+    rotation: 0
+    state: disabled
+- name: pad_source_0
+  id: pad_source
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: in
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_streams: '1'
+    optional: 'False'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 1028.0]
+    rotation: 0
+    state: true
+- name: symbol_qtty
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: none
+    label: N
+    short_id: ''
+    type: complex
+    value: '1024'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [200, 12.0]
+    rotation: 0
+    state: true
+- name: virtual_sink_3
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: theta_2
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1096, 1660.0]
+    rotation: 0
+    state: true
+- name: virtual_sink_3_0
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: theta_1
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1096, 1548.0]
+    rotation: 0
+    state: true
+- name: virtual_sink_3_1
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: theta_3
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1096, 1772.0]
+    rotation: 0
+    state: true
+- name: virtual_sink_3_1_0
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: c_1
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [456, 2092.0]
+    rotation: 0
+    state: true
+- name: virtual_sink_3_1_0_0
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: c_2
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1000, 2364.0]
+    rotation: 0
+    state: true
+- name: virtual_sink_4
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: z_i
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [960, 964.0]
+    rotation: 0
+    state: true
+- name: virtual_sink_4_0
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: z_q
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [952, 1116.0]
+    rotation: 0
+    state: true
+- name: virtual_source_1
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: z_i
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 1660.0]
+    rotation: 0
+    state: true
+- name: virtual_source_1_0
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: z_q
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 1564.0]
+    rotation: 0
+    state: true
+- name: virtual_source_1_0_0
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: z_i
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 1468.0]
+    rotation: 0
+    state: true
+- name: virtual_source_1_1
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: z_q
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [64, 1772.0]
+    rotation: 0
+    state: true
+- name: virtual_source_2
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: theta_1
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 2060.0]
+    rotation: 0
+    state: true
+- name: virtual_source_2_0
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: theta_2
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 2124.0]
+    rotation: 0
+    state: true
+- name: virtual_source_2_0_0
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: theta_2
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 2452.0]
+    rotation: 0
+    state: true
+- name: virtual_source_2_0_0_0
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: theta_2
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 2668.0]
+    rotation: 0
+    state: disabled
+- name: virtual_source_2_1
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: theta_1
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 2356.0]
+    rotation: 0
+    state: true
+- name: virtual_source_2_1_0
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: theta_3
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 2244.0]
+    rotation: 0
+    state: true
+- name: virtual_source_2_1_0_0
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: theta_3
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 2572.0]
+    rotation: 0
+    state: disabled
+- name: virtual_source_2_1_0_0_0
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: theta_3
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 2868.0]
+    rotation: 0
+    state: disabled
+- name: virtual_source_2_1_1
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: theta_1
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 2788.0]
+    rotation: 0
+    state: disabled
+- name: virtual_source_6
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: c_1
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [64, 452.0]
+    rotation: 0
+    state: true
+- name: virtual_source_6_0
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: c_2
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [64, 652.0]
+    rotation: 0
+    state: true
+- name: virtual_source_7
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: z_i
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [64, 332.0]
+    rotation: 0
+    state: true
+- name: virtual_source_7_0
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: z_q
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [64, 572.0]
+    rotation: 0
+    state: true
+
+connections:
+- [blocks_abs_xx_0, '0', blocks_moving_average_xx_0_1_0, '0']
+- [blocks_abs_xx_0_0, '0', blocks_divide_xx_0, '1']
+- [blocks_abs_xx_0_1, '0', blocks_moving_average_xx_0_1_0_1, '0']
+- [blocks_add_xx_2, '0', blocks_divide_xx_4, '0']
+- [blocks_complex_to_imag_0, '0', blocks_moving_average_xx_0_1_1, '0']
+- [blocks_complex_to_imag_0, '0', blocks_sub_xx_0_0, '0']
+- [blocks_complex_to_real_0, '0', blocks_moving_average_xx_0_1, '0']
+- [blocks_complex_to_real_0, '0', blocks_sub_xx_0, '0']
+- [blocks_divide_xx_0, '0', blocks_multiply_xx_0, '0']
+- [blocks_divide_xx_1, '0', virtual_sink_3_1_0, '0']
+- [blocks_divide_xx_2, '0', virtual_sink_3_1_0_0, '0']
+- [blocks_divide_xx_3, '0', pad_sink_1, '0']
+- [blocks_divide_xx_3_0, '0', blocks_transcendental_0_0, '0']
+- [blocks_divide_xx_4, '0', blocks_float_to_complex_0, '1']
+- [blocks_float_to_complex_0, '0', pad_sink_0, '0']
+- [blocks_moving_average_xx_0_1, '0', blocks_sub_xx_0, '1']
+- [blocks_moving_average_xx_0_1_0, '0', virtual_sink_3, '0']
+- [blocks_moving_average_xx_0_1_0_0, '0', blocks_multiply_const_vxx_0, '0']
+- [blocks_moving_average_xx_0_1_0_1, '0', virtual_sink_3_1, '0']
+- [blocks_moving_average_xx_0_1_1, '0', blocks_sub_xx_0_0, '1']
+- [blocks_multiply_const_vxx_0, '0', virtual_sink_3_0, '0']
+- [blocks_multiply_xx_0, '0', blocks_moving_average_xx_0_1_0_0, '0']
+- [blocks_multiply_xx_1, '0', blocks_sub_xx_1, '0']
+- [blocks_multiply_xx_1_0, '0', blocks_sub_xx_1, '1']
+- [blocks_multiply_xx_3, '0', blocks_add_xx_2, '0']
+- [blocks_sub_xx_0, '0', virtual_sink_4, '0']
+- [blocks_sub_xx_0_0, '0', virtual_sink_4_0, '0']
+- [blocks_sub_xx_1, '0', blocks_transcendental_0, '0']
+- [blocks_transcendental_0, '0', blocks_divide_xx_2, '0']
+- [blocks_transcendental_0_0, '0', pad_sink_2, '0']
+- [pad_source_0, '0', blocks_complex_to_imag_0, '0']
+- [pad_source_0, '0', blocks_complex_to_real_0, '0']
+- [virtual_source_1, '0', blocks_abs_xx_0, '0']
+- [virtual_source_1_0, '0', blocks_multiply_xx_0, '1']
+- [virtual_source_1_0_0, '0', blocks_abs_xx_0_0, '0']
+- [virtual_source_1_0_0, '0', blocks_divide_xx_0, '0']
+- [virtual_source_1_1, '0', blocks_abs_xx_0_1, '0']
+- [virtual_source_2, '0', blocks_divide_xx_1, '0']
+- [virtual_source_2_0, '0', blocks_divide_xx_1, '1']
+- [virtual_source_2_0_0, '0', blocks_divide_xx_2, '1']
+- [virtual_source_2_0_0_0, '0', blocks_divide_xx_3, '1']
+- [virtual_source_2_1, '0', blocks_multiply_xx_1_0, '0']
+- [virtual_source_2_1, '0', blocks_multiply_xx_1_0, '1']
+- [virtual_source_2_1_0, '0', blocks_multiply_xx_1, '0']
+- [virtual_source_2_1_0, '0', blocks_multiply_xx_1, '1']
+- [virtual_source_2_1_0_0, '0', blocks_divide_xx_3, '0']
+- [virtual_source_2_1_0_0_0, '0', blocks_divide_xx_3_0, '1']
+- [virtual_source_2_1_1, '0', blocks_divide_xx_3_0, '0']
+- [virtual_source_6, '0', blocks_multiply_xx_3, '1']
+- [virtual_source_6_0, '0', blocks_divide_xx_4, '1']
+- [virtual_source_7, '0', blocks_float_to_complex_0, '0']
+- [virtual_source_7, '0', blocks_multiply_xx_3, '0']
+- [virtual_source_7_0, '0', blocks_add_xx_2, '1']
+
+metadata:
+  file_format: 1
+  grc_version: 3.10.7.0
